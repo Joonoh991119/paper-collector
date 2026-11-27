@@ -1,5 +1,7 @@
 # Meta-Researcher
 
+> Repository name: `paper-collector` (formerly `meta-researcher`, then `elicit-semantic-collector`). Planned consolidation and source-adapter refactor: see [issue #2](https://github.com/Joonoh991119/paper-collector/issues/2).
+
 A personal research automation pipeline that turns a natural-language research question into a curated, searchable paper collection — from semantic search to PDF archival to vector-embedded memory.
 
 > **This tool is intended solely for individual, non-commercial meta-research use.**
@@ -14,8 +16,8 @@ A personal research automation pipeline that turns a natural-language research q
 ## Setup
 
 ```bash
-git clone https://github.com/Joonoh991119/meta-researcher.git
-cd meta-researcher
+git clone https://github.com/Joonoh991119/paper-collector.git
+cd paper-collector
 
 pip install -r requirements.txt
 
@@ -100,7 +102,7 @@ The pipeline uses a 6-tier fallback strategy. Each DOI is tried through these so
 ## Project Structure
 
 ```
-meta-researcher/
+paper-collector/
 ├── pipeline.py                 # Orchestrator (chains all stages)
 ├── stage1_elicit_search.py     # Elicit API → DOI list + metadata
 ├── stage2_doi2zotero.py        # DOI → PDF → Zotero (with browser fallback)
